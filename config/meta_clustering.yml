@@ -1,0 +1,21 @@
+# randomness
+random_seed: 24
+
+# paths
+supervised_ML_config: "config/training/unsupervised/grid_search.yml"
+clusterings: "reports/unsupervised/meta_clustering/element_cluster_assignments.csv"
+qualities: "reports/unsupervised/meta_clustering/experiment_comparison.csv"
+elements: "data/processed/sal.csv"
+
+
+# filtering
+filter_name: "cluster_diff_metric"
+min_filter_threshold : 0.6
+
+# transformation / dim reduction
+target_dimensionality: 3
+transformation: PrincipalComponentAnalysis
+
+epsilon: 0.2
+
+clustering: MeanShift
